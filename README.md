@@ -32,7 +32,7 @@ admin.site.register(bankloan,bankloanadmin)
  
  models.py
 
- rom django.contrib import admin 
+rom django.contrib import admin 
 class bankloan(models.Model):
 	name=models.CharField(max_length=15)
 	phoneno=models.IntegerField()
@@ -40,7 +40,7 @@ class bankloan(models.Model):
 	loan_amount=models.IntegerField()
 	interset=models.FloatField()
 class bankloanadmin(admin.ModelAdmin):
-	list_display=('name','phoneno','accountno','loan_amount','interset')
+list_display=('name','phoneno','accountno','loan_amount','interset')
 '''
 
 
